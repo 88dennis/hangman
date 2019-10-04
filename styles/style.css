@@ -1,0 +1,236 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.h2Title {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+}
+
+.h1Title {
+    text-align: center;
+    font-family: 'Freckle Face', cursive;
+    font-size: 70px;
+}
+
+.divOne {
+    width: 50%;
+}
+
+.divTwo {
+    width: 50%;
+}
+
+.inputWrapper1 {
+    text-align: center;
+}
+
+.inputWrapper2 {
+    text-align: center;
+    width: 100%;
+}
+
+#guessInputId {
+    height: 35px;
+    width: 40%;
+    margin: 0;
+    padding: 5px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+#wordInputId {
+    height: 35px;
+    width: 40%;
+    margin: 0;
+    padding: 5px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+#submitBtn {
+    background-color: transparent;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+#submitBtn:focus {
+    outline: none;
+    background-color: black;
+    color: white;
+    border-style: none;
+    /* text-decoration: underline; */
+}
+
+#submitBtn2:focus {
+    outline: none;
+    background-color: black;
+    color: white;
+    border-style: none;
+    /* text-decoration: underline; */
+}
+
+.wrongCont {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Nosifer', cursive;
+}
+
+.wrongSpan {
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+.wrongWrap {
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-size: 25px;
+    vertical-align: middle;
+    margin-top: 20px;
+    padding: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+#submitBtn2 {
+    background-color: transparent;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    height: 45px;
+    width: 100px;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+#wordInputId:focus {
+    outline: none;
+    background-color: black;
+    color: white;
+    border-style: none;
+}
+
+#guessInputId:focus {
+    outline: none;
+    background-color: black;
+    color: white;
+    border-style: none;
+}
+
+.letterSpan {
+    margin-top: 50px;
+    border: solid;
+    border-color: gray;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-image: url("https://i.imgur.com/QMfYzAc.png");
+    background-size: cover;
+    background-position-x: 60px;
+    border-style: none;
+    font-family: 'Creepster', cursive;
+    font-size: 30px;
+}
+
+.spanStyle {
+    border-style: none;
+}
+
+#boxWrapper {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.imageWrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.youLoose {
+    font-family: 'Nosifer', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+.youWin {
+    font-family: 'Ewert', cursive;
+    text-align: center;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 960px) {
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .divOne {
+        width: 100%;
+    }
+    .divTwo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .divOne {
+        width: 100%;
+    }
+    .divTwo {
+        width: 100%;
+    }
+}
+
+@media (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+    .main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .divOne {
+        width: 100%;
+    }
+    .divTwo {
+        width: 100%;
+    }
+}

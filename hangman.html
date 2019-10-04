@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hangman!</title>
+    <!--You do not need to edit this file.-->
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Creepster|Ewert|Freckle+Face|Nosifer|Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <!-- div1 -->
+        <div class="divOne">
+            <div>
+                <h1 class="h1Title">HANGMAN</h1>
+            </div>
+
+            <div class="">
+                <div class="col-12" id="formExample">
+                    <form id="formForWord">
+                        <label for="wordInputId">
+                            <h2 class="h2Title">PLAYER 1 enter a word</h2>
+                        </label>
+                        <div class="inputWrapper1">
+                            <input type="password" id="wordInputId" name="name" placeholder="WORD TO GUESS " />
+                            <input id="submitBtn" type="submit" value="GO" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="guessWrapper" style="display: none">
+                    <form id="formForGuess">
+                        <label for="guessInputId">
+                            <h2 class="h2Title">PLAYER 2 guess the word</h2>
+                        </label>
+                        <div class="inputWrapper2">
+                            <input type="text" id="guessInputId" maxlength="1" name="name" autocomplete="off" placeholder="TYPE A LETTER" />
+                            <input id="submitBtn2" type="submit" value="GUESS" />
+                        </div>
+                    </form>
+                </div>
+                <div class="wrongCont"></div>
+                <div class="youWin" style="display: none">
+                    <h2>You Win!</h2>
+                </div>
+                <div class="youLoose" style="display: none">
+                    <h2>You Loose!</h2>
+                </div>
+            </div>
+        </div>
+        <!-- div1 -->
+
+
+
+        <!-- div2 -->
+        <div class="divTwo">
+            <div id="boxWrapper"></div>
+            <div class="imageWrapper">
+                <img id="imgId" src="images/strike-6.png" alt="">
+            </div>
+        </div>
+        <!-- div2 -->
+    </div>
+
+
+
+</body>
+
+<script src="scripts/script.js"></script>
+
+</html>
