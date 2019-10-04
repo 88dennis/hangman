@@ -23,6 +23,7 @@ let imgSrc3 = "images/strike-3.png";
 let imgSrc4 = "images/strike-4.png";
 let imgSrc5 = "images/strike-5.png";
 let imgSrc6 = "images/strike-6.png";
+let imgSrc7 = "images/rope.png";
 let strikeLetters;
 
 document.getElementById("formForWord").addEventListener("submit", getWord);
@@ -100,6 +101,8 @@ function getGuess(event) {
             strike = 0;
             maxStrike = 0;
             guessWrapper.style.display ="none"
+            imgElem.src = imgSrc7;
+
         }
     }
     guessInput.value = ""
