@@ -93,11 +93,11 @@ function getGuess(event) {
             maxStrike = 0;
             guessWrapper.style.display ="none"
             imgElem.src = imgSrc7;
+            wordInput.focus()
         }
     }
     guessInput.value = ""
 }
-
 
 function drawHangMan(nums) {
     if (nums === 1 && nums <= maxStrike * .2) {
@@ -119,6 +119,8 @@ function drawHangMan(nums) {
         imgElem.src = imgSrc6;
         guessWrapper.style.display ="none"
         youLoose.style.display = "block"
+        youLoose.style.color = "red"
+        wordInput.focus()  
         
     }
 }
