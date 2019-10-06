@@ -10,6 +10,30 @@ input[type=submit] {
     font-size: 20px;
 }
 
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: .6;
+    font-family: 'Freckle Face', cursive;
+    font-size: 15px;
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: red;
+    opacity: .6;
+    font-family: 'Freckle Face', cursive;
+    font-size: 15px;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: red;
+    opacity: .6;
+    font-family: 'Freckle Face', cursive;
+    font-size: 15px;
+}
+
 .main {
     display: flex;
     justify-content: center;
